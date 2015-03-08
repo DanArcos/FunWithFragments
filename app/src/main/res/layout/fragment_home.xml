@@ -11,6 +11,18 @@
         android:id="@+id/singleFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to single fragment"/>
+        android:text="Single fragment"/>
+
+    <Button
+        android:id="@+id/MultiFragmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi fragment"/>
+
+    <Button
+        android:id="@+id/PagerFragmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pager fragment"/>
 
 </LinearLayout>
