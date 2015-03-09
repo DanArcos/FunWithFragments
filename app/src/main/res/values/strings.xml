@@ -1,7 +1,10 @@
 <resources>
+
     <string name="app_name">FunWithFragments</string>
     <string name="title_activity_home">HomeActivity</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="show_activity">Show Activity</string>
+
 </resources>

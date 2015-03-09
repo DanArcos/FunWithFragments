@@ -15,7 +15,7 @@ public class MultiFragmentActivity extends FragmentActivity{
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = fragmentManager.findFragmentById(R.id.fragmentContainer);
 
-        //Start MultiFragment the first time this activity is started
+        //Start MultiFragment1 the first time the activity is started
         if(fragment == null){
             fragment = new MultiFragment1();
             fragmentManager

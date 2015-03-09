@@ -23,7 +23,7 @@ public class HomeFragment extends Fragment{
         mShowActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_LONG);
+                Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_LONG).show();
             }
         });
 
