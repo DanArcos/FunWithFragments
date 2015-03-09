@@ -8,15 +8,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/triforce"/>
+        android:src="@drawable/windwaker"/>
 
     <Button
-        android:id="@+id/fragment_transition_button"
+        android:id="@+id/go_back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="Go to next fragment"/>
+        android:text="Go Back"/>
 
 </RelativeLayout>
