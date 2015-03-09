@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
-
-
-    <Button
-        android:id="@+id/singleFragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Single fragment"/>
+    >
 
     <Button
-        android:id="@+id/MultiFragmentButton"
+        android:id="@+id/show_activity_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Multi fragment"/>
+        android:text="Show Activity"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <Button
-        android:id="@+id/PagerFragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pager fragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/singleFragmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single fragment"
+            />
+
+        <Button
+            android:id="@+id/MultiFragmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi fragment"
+            />
+
+        <Button
+            android:id="@+id/PagerFragmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pager fragment"
+             />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

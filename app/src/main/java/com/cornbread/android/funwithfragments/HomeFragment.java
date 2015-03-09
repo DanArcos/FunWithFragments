@@ -11,12 +11,21 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class HomeFragment extends Fragment{
+    Button mShowActivityButton;
     Button mSingleFragmentButton;
     Button mMultiFragmentButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
+
+        mShowActivityButton = (Button)v.findViewById(R.id.show_activity_home);
+        mShowActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_LONG);
+            }
+        });
 
         mSingleFragmentButton = (Button)v.findViewById(R.id.singleFragmentButton);
         mSingleFragmentButton.setOnClickListener(new View.OnClickListener() {
