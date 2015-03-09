@@ -15,9 +15,10 @@
         android:id="@+id/fragment_transition_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to next fragment"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Go to next fragment"/>
 
 
 
