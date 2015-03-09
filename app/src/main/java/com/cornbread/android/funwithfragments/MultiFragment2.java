@@ -20,8 +20,12 @@ public class MultiFragment2 extends Fragment{
         mGoBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "CLICK CLICK", Toast.LENGTH_SHORT).show();
-                // Go back
+                //Toast.makeText(getActivity(), "CLICK CLICK", Toast.LENGTH_SHORT).show();
+                // Go back to previous fragment
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainer, new MultiFragment1())
+                        .commit();
             }
         });
 
