@@ -21,9 +21,7 @@ public class MultiFragment1 extends Fragment{
         mFragmentTransition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getActivity(), "CLICK CLICK", Toast.LENGTH_SHORT).show();
-
-                //Transition to multifragment2
+                //Transition to MultiFragment2
                 getFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragmentContainer, new MultiFragment2())
@@ -35,6 +33,7 @@ public class MultiFragment1 extends Fragment{
         mShowActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Show activity name when clicked
                 Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
             }
         });

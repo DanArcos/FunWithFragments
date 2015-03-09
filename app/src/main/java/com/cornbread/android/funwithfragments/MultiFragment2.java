@@ -22,8 +22,7 @@ public class MultiFragment2 extends Fragment{
         mGoBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getActivity(), "CLICK CLICK", Toast.LENGTH_SHORT).show();
-                // Go back to previous fragment
+                // Go back to previous fragment when clicked
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragmentContainer, new MultiFragment1())
@@ -31,11 +30,11 @@ public class MultiFragment2 extends Fragment{
             }
         });
 
-        //Log.d("TAG", getActivity().getClass().getSimpleName());
         mShowActivity2Button = (Button) v.findViewById(R.id.show_activity2);
         mShowActivity2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Show activity name when clicked
                 Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
             }
         });

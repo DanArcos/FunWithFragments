@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment{
         mShowActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Show Activity Name when clicked
                 Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_LONG).show();
             }
         });
@@ -31,7 +32,6 @@ public class HomeFragment extends Fragment{
         mSingleFragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getActivity(), "click", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getActivity(), SingleFragmentActivity.class));
             }
         });
