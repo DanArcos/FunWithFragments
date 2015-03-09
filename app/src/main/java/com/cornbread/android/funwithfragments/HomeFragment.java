@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class HomeFragment extends Fragment{
     Button mSingleFragmentButton;
+    Button mMultiFragmentButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -22,8 +23,15 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getActivity(), "click", Toast.LENGTH_SHORT).show();
-
                 startActivity(new Intent(getActivity(), SingleFragmentActivity.class));
+            }
+        });
+
+        mMultiFragmentButton = (Button)v.findViewById(R.id.MultiFragmentButton);
+        mMultiFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), MultiFragmentActivity.class));
             }
         });
 
