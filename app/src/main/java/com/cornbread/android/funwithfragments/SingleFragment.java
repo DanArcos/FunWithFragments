@@ -23,7 +23,7 @@ public class SingleFragment extends Fragment{
         mToastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "This is a single fragment activity", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
             }
         });
 

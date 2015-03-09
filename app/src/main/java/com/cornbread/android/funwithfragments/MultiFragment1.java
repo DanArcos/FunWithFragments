@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MultiFragment1 extends Fragment{
     Button mFragmentTransition;
+    Button mShowActivity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class MultiFragment1 extends Fragment{
                     .beginTransaction()
                     .replace(R.id.fragmentContainer, new MultiFragment2())
                     .commit();
+            }
+        });
+
+        mShowActivity = (Button) v.findViewById(R.id.show_activity);
+        mShowActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), getActivity().getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
             }
         });
 
