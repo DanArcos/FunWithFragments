@@ -1,6 +1,5 @@
 package com.cornbread.android.funwithfragments;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -18,7 +17,7 @@ public class MultiFragmentActivity extends FragmentActivity{
 
         //Start MultiFragment the first time this activity is started
         if(fragment == null){
-            fragment = new MultiFragment();
+            fragment = new MultiFragment1();
             fragmentManager
                     .beginTransaction()
                     .add(R.id.fragmentContainer, fragment)
