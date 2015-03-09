@@ -21,6 +21,12 @@ public class MultiFragment1 extends Fragment{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "CLICK CLICK", Toast.LENGTH_SHORT).show();
+
+                //Transition to another fragment
+                getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainer, new MultiFragment2())
+                    .commit();
             }
         });
 

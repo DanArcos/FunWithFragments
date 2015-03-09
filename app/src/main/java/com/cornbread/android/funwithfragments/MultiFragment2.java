@@ -14,7 +14,7 @@ public class MultiFragment2 extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_multi1, container, false);
+        View v = inflater.inflate(R.layout.fragment_multi2, container, false);
 
         mGoBackButton = (Button) v.findViewById(R.id.go_back_button);
         mGoBackButton.setOnClickListener(new View.OnClickListener() {
