@@ -14,6 +14,7 @@ public class HomeFragment extends Fragment{
     Button mShowActivityButton;
     Button mSingleFragmentButton;
     Button mMultiFragmentButton;
+    Button mPagerFragmentButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,6 +42,14 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), MultiFragmentActivity.class));
+            }
+        });
+
+        mPagerFragmentButton = (Button)v.findViewById(R.id.PagerFragmentButton);
+        mPagerFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ViewPagerActivity.class));
             }
         });
 
