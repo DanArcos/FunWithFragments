@@ -22,11 +22,17 @@ public class MultiFragment2 extends Fragment{
         mGoBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Go back to previous fragment when clicked
-                getFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragmentContainer, new MultiFragment1())
-                        .commit();
+
+                if(getActivity().getClass().getSimpleName().toString().equals("MultiFragmentActivity")) {
+                    // Go back to previous fragment when clicked
+                    getFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.fragmentContainer, new MultiFragment1())
+                            .commit();
+                }
+                else{
+                    Toast.makeText(getActivity(), "This is reserved for MultiFragmentActivity", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
