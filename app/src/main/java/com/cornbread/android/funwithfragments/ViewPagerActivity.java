@@ -22,7 +22,7 @@ public class ViewPagerActivity extends FragmentActivity{
         mMultiFragment2 = new MultiFragment2();
 
         mViewPager = new ViewPager(this); //Instantiate Viewpager
-        mViewPager.setId(R.id.viewPager);
+        mViewPager.setId(R.id.viewPager); //Set ID
         setContentView(mViewPager);
 
 
